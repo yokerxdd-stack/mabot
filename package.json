@@ -1,0 +1,16 @@
+{
+  "name": "mc-afk-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "node scripts/patch-forge-command-type.js"
+  },
+  "dependencies": {
+    "minecraft-protocol-forge": "git+https://github.com/Pix3lPirat3/node-minecraft-protocol-forge.git#af4dcd8fca4c3c0ba69b8665a8c41c40ff72e6c1",
+    "mineflayer": "^4.39.0"
+  },
+  "overrides": {
+    "minecraft-protocol": "git+https://github.com/Pix3lPirat3/node-minecraft-protocol.git#0d1b75cebc86c4ccf0bafd210c2e8759d118f91b"
+  }
+}
