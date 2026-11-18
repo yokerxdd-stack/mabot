@@ -2,8 +2,8 @@ const mineflayer = require("mineflayer");
 const { autoVersionForge } = require("minecraft-protocol-forge");
 const http = require("http");
 
-// Servidor web para UptimeRobot
-http.createServer((req, res) => res.end("Bot andando")).listen(3000);
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => res.end("Bot andando")).listen(PORT);
 
 let reconnectTimer;
 let reconnectDelay = 5000;
